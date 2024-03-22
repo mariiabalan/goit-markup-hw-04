@@ -30,6 +30,7 @@ address{
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
 }
 
 .container {
@@ -324,6 +325,7 @@ margin-bottom: 8px;
     color: #2e2f42;
     margin-bottom: 72px;
     }
+
 .team-list {
     display: flex;
     gap: 24px;
@@ -380,9 +382,11 @@ color: #434455;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icone-link:hover,
+.icone-link:hover{
+background-color: #404bbf; 
+}
 .icone-link:focus{
-    background-color: #404BBF;
+background-color: #404bbf; 
 }
 
 
@@ -417,10 +421,15 @@ margin-bottom: 72px;
 .portfolio-item{
     background-color: #FFFFFF;
     width: calc((100% - 48px) / 3); 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
 .portfolio-item:hover .portfolio-cover-text{
 transform: translateY(0);
+}
+
+.portfolio-item:hover{
+    box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list{
